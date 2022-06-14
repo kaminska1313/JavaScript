@@ -7,7 +7,7 @@
 // Вывести в консоль результат работы функции с возрастами 17, 18, 61
 
 const checkAge = function (age) {
-    let age_1 = 10;
+
     let age_2 = 18;
     let age_3 = 60;
 
