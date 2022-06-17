@@ -10,21 +10,17 @@ while (n <= 10) {
 // 1*. Преобразовать 1 задачу в функцию, принимающую на вход степень, в которую будет возводиться число 2
 
 const expon = function (e) {
-    if (!isNaN(e)) {
-        let exp = Math.pow(2, e);
-        console.log(`2 to the ${e} power = ${exp}`)
-    }
+    let exp = Math.pow(2, e);
+    console.log(`2 to the ${e} power = ${exp}`)
 }
-expon(4);
+expon(-2);
 
 // можно через forEach:
 
 const expon2 = function (...arr) {
     arr.forEach(x => {
-        if (!isNaN(x)) {
-            let exp = Math.pow(2, x);
-            console.log(`2 to the ${x} power = ${exp}`)
-        }
+        let exp = Math.pow(2, x);
+        console.log(`2 to the ${x} power = ${exp}`)
     })
 }
 expon2(3, 5, 7, 16);
