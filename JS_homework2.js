@@ -25,7 +25,6 @@ const expon2 = function (...arr) {
             let exp = Math.pow(2, x);
             console.log(`2 to the ${x} power = ${exp}`)
         }
-
     })
 }
 expon2(3, 5, 7, 16);
@@ -40,10 +39,15 @@ expon2(3, 5, 7, 16);
 
 let smile = ':)';
 while (smile.length <= 10) {
-
     console.log(smile);
-    smile = smile + ':)';
+    smile += ':)';
+}
 
+//можно через for
+
+let s = ':)';
+for (smile = ':)'; smile.length <= 10; smile += s) {
+    console.log(smile);
 }
 
 /*2*. Преобразовать 2 задачу в функцию, принимающую на вход строку, которая и будет выводиться в консоль (как в условии смайлик), а также количество строк для вывода 
