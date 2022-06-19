@@ -10,15 +10,16 @@ if (username && isNaN(username)) {
 }
 
 const kmn = function () {
-    let machine = Math.random();
-    if (machine <= 0.33) {
+    let machine = Math.floor(1 + Math.random() * 3);
+
+    if (machine == 1) {
         machine = 'камень';
-    } else if (machine <= 0.66) {
+    } else if (machine == 2) {
         machine = 'ножницы';
     } else {
         machine = 'бумага';
     }
-    return machine
+    return machine;
 }
 
 const game = function (machine, brain) {
