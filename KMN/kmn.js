@@ -3,7 +3,7 @@ let user = 0;
 
 const username = prompt('Как тебя зовут?');
 if (username && isNaN(username)) {
-    alert(`Ну-ну, ${username}, готовь жопу! Играем до 5 побед.`);
+    alert(`Ну-ну, ${username}, готовь жепппу! Играем до 5 побед.`);
 } else {
     alert("Ты стесняешься своего имени, что ли? Уфф...")
     
