@@ -359,7 +359,7 @@ function unique(users) {
     let list = [];
 
     for (let user of users) {
-        if (!list.includes(user['name'])) {
+        if (!JSON.stringify(list).includes(user['name']))) {
             list.push(user);
         }
     }
