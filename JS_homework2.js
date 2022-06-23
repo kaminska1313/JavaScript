@@ -65,16 +65,17 @@ e.g. function getWordStructure(word)
 Проверки: 'case', 'Case', 'Check-list'*/
 
 let fact = function getWordStructure(word) {
-
     let vowels = /[aeiou]/g;
     let consonants = /[qwrtpsdfghjklzxcvbnm]/g
     let check = word.toLowerCase();
-    let resultV = check.match(vowels).length;
-    let resultC = check.match(consonants).length;
-
-    console.log(`Слово ${word} состоит из ${resultV} гласных и ${resultC} согласных букв`);
+    if (check.match(vowels) && check.match(consonants)) {
+        console.log(`Слово ${word} состоит из ${check.match(vowels).length} гласных и ${check.match(consonants).length} согласных букв`);
+    } else if (check.match(vowels) == null) {
+        console.log(`Слово ${word} состоит из 0 гласных и ${check.match(consonants).length} согласных букв`)
+    } else {
+        console.log(`Слово ${word} состоит из ${check.match(vowels).length} гласных и 0 согласных букв`)
+    }
 }
-
 fact("case")
 fact("Case")
 fact("Check-list")
